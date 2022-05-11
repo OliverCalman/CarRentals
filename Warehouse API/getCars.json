@@ -1,0 +1,127 @@
+{
+    "carDetails": [
+        {
+            "Category": "Sedan",
+            "Availability": "Yes",
+            "Brand": "BMW",
+            "Model": "320i",
+            "Modelyear": 2020,
+            "Mileage": 65496,
+            "Fueltype": "Unleaded",
+            "Seats": 5,
+            "Priceperday": 159.99,
+            "Description": "A luxury German sedan, complete with sunroof and heated leather seats."
+        },
+        {
+            "Category": "Sedan",
+            "Availability": "Yes",
+            "Brand": "Toyota",
+            "Model": "Camry",
+            "Modelyear": 2019,
+            "Mileage": 76491,
+            "Fueltype": "Unleaded",
+            "Seats": 5,
+            "Priceperday": 119.99,
+            "Description": "Mid-sized, eco friendly, and easy to drive."
+        },
+        {
+            "Category": "SUV",
+            "Availability": "Yes",
+            "Brand": "Holden",
+            "Model": "Captiva",
+            "Modelyear": 2009,
+            "Mileage": 120005,
+            "Fueltype": "Unleaded",
+            "Seats": 7,
+            "Priceperday": 89.99,
+            "Description": "A crossover SUV that's perfect for the whole family."
+        },
+        {
+            "Category": "SUV",
+            "Availability": "No",
+            "Brand": "Jeep",
+            "Model": "Cherokee",
+            "Modelyear": 2021,
+            "Mileage": 49455,
+            "Fueltype": "Unleaded",
+            "Seats": 7,
+            "Priceperday": 149.99,
+            "Description": "Roads not required for this capable offroader."
+        },
+        {
+            "Category": "Sedan",
+            "Availability": "No",
+            "Brand": "Honda",
+            "Model": "Civic",
+            "Transmission": "Manual",
+            "Modelyear": 2021,
+            "Mileage": 5789,
+            "Fueltype": "Unleaded",
+            "Seats": 5,
+            "Priceperday": 119.99,
+            "Description": "A basic sedan with great fuel economy and boot space."
+        },
+        {
+            "Category": "SUV",
+            "Availability": "Yes",
+            "Brand": "Mercedes",
+            "Model": "GLC",
+            "Modelyear": 2021,
+            "Mileage": 7841,
+            "Fueltype": "Diesel",
+            "Seats": 7,
+            "Priceperday": 189.99,
+            "Description": "A luxury German SUV. Perfect for when you want to get the whole family around in style."
+        },
+        {
+            "Category": "Hatchback",
+            "Availability": "Yes",
+            "Brand": "Volkswagen",
+            "Model": "Golf",
+            "Modelyear": 2019,
+            "Mileage": 28596,
+            "Fueltype": "Diesel",
+            "Seats": 5,
+            "Priceperday": 119.99,
+            "Description": "A fun, sporty hatchback with plenty of horsepower."
+        },
+        {
+            "Category": "SUV",
+            "Availability": "Yes",
+            "Brand": "Suzuki",
+            "Model": "Jimny",
+            "Modelyear": 2010,
+            "Mileage": 164922,
+            "Fueltype": "Unleaded",
+            "Seats": 2,
+            "Priceperday": 74.99,
+            "Description": "A mini SUV for short offroad adventures."
+        },
+        {
+            "Category": "Sedan",
+            "Availability": "No",
+            "Brand": "Hyundai",
+            "Model": "Sonata",
+            "Modelyear": 2019,
+            "Mileage": 12445,
+            "Fueltype": "Unleaded",
+            "Seats": 5,
+            "Priceperday": 119.99,
+            "Description": "A no-frills sedan with plenty of storage and legroom."
+        },
+        {
+            "Category": "SUV",
+            "Availability": "Yes",
+            "Brand": "Nissan",
+            "Model": "X-Trail",
+            "Transmission": "Automatic",
+            "Modelyear": 2018,
+            "Mileage": 16458,
+            "Fueltype": "Diesel",
+            "Seats": 7,
+            "Priceperday": 129.99,
+            "Description": "A powerful off-road SUV for journeys off the beaten path."
+        }
+    ]
+}
+
