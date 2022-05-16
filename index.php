@@ -7,6 +7,7 @@ session_start();
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Hertz-UTS | Online Car Rental</title>
+    <link rel="icon" href=Images\favicon.ico>
   </head>
 <body>
 
@@ -34,7 +35,7 @@ Rental prices that won't Hertz your wallet-->
 <div class="footer">
   Produced for 32516 Internet Programming by <a href="http:\\www.github.com\OliverCalman">Oliver Calman</a>, 2022. <br>
   Distribution under MIT licence. All copyrighted material is the property of its respective owners. <br>
-  Version 0.0.7
+  Version 1.0.1
 </div>
 
 </div>

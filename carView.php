@@ -6,7 +6,7 @@ session_start();
 <html>
   <head>
     <title>Hertz-UTS | Online Car Rental</title>
-    
+    <link rel="icon" href=Images\favicon.ico>
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -16,9 +16,9 @@ session_start();
 
 <div class="header-logo-container">
 <!--anchor link to homepage-->
-<a href="index.php"><img id="hertzlogo" style="height:80px" src=Images\HertzLogo.png alt="Hertz Logo">
+<a href="index.php"><img id="hertzlogo" style="height:80px; padding:10px" src=Images\HertzLogo.png alt="Hertz Logo">
 <!--uni logo-->
-<img id="unilogo" style="height:80px" src=Images\utsLogo.png alt="UTS Logo"></a>
+<img id="unilogo" style="height:80px; padding:10px" src=Images\utsLogo.png alt="UTS Logo"></a>
 
 <!-- view reservations-->
   <div class="reservations">
@@ -29,13 +29,14 @@ session_start();
 
 
 <!--filter box-->
+<!--note these filters are currently OFF as the underlying logic hasn't been added-->
 <div class="filter">
   <h1 style="text-align: center">Filter Results</h1>
 
   <br>
 
   <label for="cartype">Type of Car</label>
-    <select id="cartype" name="cartype">
+    <select id="cartype" name="cartype" disabled>
     <option value="any">Any</option>
      <option value="SUV">SUV</option>
      <option value="Sedan">Sedan</option>
@@ -45,8 +46,8 @@ session_start();
     <br>    <br>
 
   <label for="manufacturer">Make</label>
-    <select id="manufacturer" name="manufacturer" multiple style="height:200px">
-    <option value="any">Any</option>
+    <select id="manufacturer" name="manufacturer" multiple style="height:200px" disabled>
+    <option value="any" selected>Any</option>
      <option value="BMW">BMW</option>
      <option value="Honda">Honda</option>
      <option value="Hyundai">Hyundai</option>
@@ -61,7 +62,7 @@ session_start();
    <br>    <br>
 
    <label for="availability">Availability</label>
-    <select id="availability" name="availability">
+    <select id="availability" name="availability" disabled>
     <option value="any">Any</option>
      <option value="Yes">Yes</option>
      <option value="No">No</option>
@@ -69,8 +70,7 @@ session_start();
     
 </div>
 
-<!--display all cars on page-->
-<!--note to marker - I'm super excited over how streamlined this is - the whole thing is fed by my JS script! Should be super easy to maintain-->
+<!--display all cars on page using js results-->
 <div class="grid-container">
       <div id="car0"></div>
       <div id="car1"></div>
@@ -85,12 +85,13 @@ session_start();
       <div id="car10"></div>
       <div id="car11"></div>
  </div>   
-
+ <!--note on requirements - if availability is NO then button should be disabled. In this case I have a layout set up in css and JS to handle this rather than using a popup-->
+ 
 <br>
 <div class="footer">
   Produced for 32516 Internet Programming by <a href="http:\\www.github.com\OliverCalman">Oliver Calman</a>, 2022. <br>
   Distribution under MIT licence. All copyrighted material is the property of its respective owners. <br>
-  Version 0.0.7
+  Version 1.0.1
 </div>
 
 </body>

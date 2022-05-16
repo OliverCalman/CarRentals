@@ -3,18 +3,23 @@
       }
       h1 {
       color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Helvetica, sans-serif;
       font-size: 18px;
       }
       h2 {
       color: #000000;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Helvetica, sans-serif;
       font-size: 12px;
       }
       .header-logo-container {
         background-color: #ffffff;
         width: 100%;
-        height: 90px;
+        height: fit-content;
+      }
+      .spacer {
+        background-color: #e7e7e7;
+        width: 100%;
+        height: 40px;
       }
       .intro{
         background-color: #ffffff;
@@ -24,7 +29,7 @@
         width: 100%;
         text-align: center;
         color: #000000;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
       }
       .get-started button {
         border-style: solid;
@@ -52,11 +57,15 @@
       .filter {
         background-color: #ffffff;
         float:left;
-        position: relative;
-        top: 25px;
+        position: sticky;
+        top: 150px;
+        left: 20px;
         width: 15%;
-        height: 70vw;
+        height: fit-content;
         align-content: center;
+      }
+      .filter select:disabled {
+        cursor: not-allowed;
       }
       .grid-container {
          display: grid;
@@ -76,9 +85,10 @@
         background-color: #ffffff;
         max-width: 400px;
         height: fit-content;
+        min-height: 100px;
         margin: 5px;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
       }
       .price {
         color: #00008b;
@@ -88,7 +98,7 @@
         position: relative;
         top: 10px;
         padding: 20px;
-        font-weight: normal;
+        font-weight: bolder;
         font-size: 20px;
       }
       .card img {
@@ -144,12 +154,12 @@
         cursor: pointer;
       }
       label {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
         margin: 5%;
       }
       .reservations {
         position: absolute;
-        top:20px;
+        top:30px;
         right: 25px;
       }
       .reservations button {
@@ -175,7 +185,17 @@
         width: 100%;
         min-height: fit-content;
         background-color: #ffffff;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+        padding-bottom: 30px;
+      }
+      .content-checkout{
+        position: relative;
+        top: 20px;
+        width: 100%;
+        min-height: 1100px;
+        background-color: #ffffff;
+        font-family: Helvetica, sans-serif;
         text-align: center;
         padding-bottom: 30px;
       }
@@ -223,6 +243,42 @@
         color: #ffffff;
         background-color: #ff0000;
       }
+      .reservation-table input[type=submit]{
+        border: none;
+        border-radius: 4px;
+        outline: 0;
+        padding: 12px;
+        color: #ffffff;
+        background-color: #5233ff;
+        text-align: center;
+        cursor: pointer;
+        font-size: 15px;
+        width: 100px;
+      }
+      .reservation-table input[type=submit]:hover {
+        color: #ffffff;
+        background-color: #337aff;
+      }
+      .reservation-table input:invalid {
+        border-color: #da1818;
+        background-color: #fabcbc;
+      }
+      .removebutton input[type=submit]{
+        border: none;
+        border-radius: 4px;
+        outline: 0;
+        padding: 12px;
+        color: #ffffff;
+        background-color: #da2121;
+        text-align: center;
+        cursor: pointer;
+        font-size: 15px;
+        width: 100px;
+      }
+      .removebutton input[type=submit]:hover {
+        color: #ffffff;
+        background-color: #ff0000;
+      }
       .checkout {
         font-family: Arial, Helvetica, sans-serif;
         position: relative;
@@ -245,8 +301,31 @@
       .checkout button:hover {
         background-color: #f9fd00;
       }
+      .checkout-fail {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .checkout-fail button {
+        border-style: solid;
+        border-width: 2px;
+        border-color: #000000;
+        border-radius: 8px;
+        padding: 12px;
+        color: #000000;
+        background-color: #f7e946;
+        text-align: center;
+        cursor: pointer;
+        width: 300px;
+        font-size: 18px;
+      }
+      .checkout-fail button:hover {
+        background-color: #f9fd00;
+      }
       .checkout-form {
         text-align: left;
+        width: 50%;
+        position: absolute;
+        left: 10%;
+        padding-bottom: 10px;
       }
       .checkout-form input {
           width: 100%;
@@ -270,10 +349,24 @@
         text-align: left;
     }
       .checkout-form table {
-          position: relative;
-          left: 34%;
+        position: relative;
+        left: 10%;
       }
-      .continue button {
+      .checkout-cart-summary {
+        position: sticky;
+        left: 60%;
+        top: 20%;
+        width: 500px;
+        border: 1px solid #cccccc;
+        padding: 10px;
+        background-color: #ffffff;
+      }
+      .checkout-cart-summary table{
+        width: 100%;
+        text-align: left;
+        padding: 20px;
+      }
+      .continue input[type="submit"] {
         border-style: solid;
         border-width: 2px;
         border-color: #000000;
@@ -287,9 +380,10 @@
         font-size: 18px;
         height: 60px;
         position: relative;
-        top: 30px;
+        top: 20px;
+        left: 28%;
       }
-      .continue button:hover {
+      .continue input[type="submit"]:hover {
         background-color: #f9fd00;
       }
       .map {
@@ -310,10 +404,23 @@
         height: 20px;
         margin-top: auto;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace;
         font-size: 12px;
       }
       @keyframes fade {
         from {opacity: 0;}
         to {opacity: 1;}
       }
+      /* from W3 schools
+      /* Chrome, Safari, Edge, Opera */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+      }
+
+      /* Firefox */
+      input[type=number] {
+      -moz-appearance: textfield;
+      }
+      

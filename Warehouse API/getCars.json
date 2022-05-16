@@ -10,7 +10,7 @@
             "Fueltype": "Unleaded",
             "Seats": 5,
             "Priceperday": 159.99,
-            "Description": "A luxury German sedan, complete with sunroof and heated leather seats."
+            "Description": "A luxury German sedan with heated leather seats."
         },
         {
             "Category": "Sedan",
@@ -59,7 +59,7 @@
             "Fueltype": "Unleaded",
             "Seats": 5,
             "Priceperday": 119.99,
-            "Description": "A basic sedan with great fuel economy and boot space."
+            "Description": "A basic sedan with great fuel economy."
         },
         {
             "Category": "SUV",
@@ -71,7 +71,7 @@
             "Fueltype": "Diesel",
             "Seats": 7,
             "Priceperday": 189.99,
-            "Description": "A luxury German SUV. Perfect for when you want to get the whole family around in style."
+            "Description": "A luxury German SUV with 5 star safety features."
         },
         {
             "Category": "Hatchback",
@@ -120,7 +120,7 @@
             "Fueltype": "Diesel",
             "Seats": 7,
             "Priceperday": 129.99,
-            "Description": "A powerful off-road SUV for journeys off the beaten path."
+            "Description": "A powerful off-road SUV with great storage space."
         }
     ]
 }
