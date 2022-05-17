@@ -140,7 +140,7 @@ if (!isset($_SESSION['cart'])) {
     
     <!-- adding this in to meet the requirements, though I would prefer just to show the cart empty message. delete this div to go back to the msg only laout-->
     <div class="checkout-fail">
-    <a href="carView.php"><button onclick=goBack()>Try to checkout</button></a>  
+    <a href="carView.php"><button onclick=goBack()>Checkout</button></a>  
     </div>
     
     <?php
@@ -175,9 +175,7 @@ if (sizeof($_SESSION['cart']) !== 0) {
           <td>
           <form id="rentalDaysValue" method='post' action="cart.php">
           <input type="hidden" name="cartIndex" value=<?php echo $name; ?>>
-          <input type="number" min="1" name="daysNeeded" value=<?php echo $array['rentalDays']; ?>> <!--post this value and insert into array using cart index-->
-          
-          <input type="submit" value="Update">
+          <input type="number" min="1" name="daysNeeded" onchange="this.form.submit()"value=<?php echo $array['rentalDays']; ?>> <!--post this value and insert into array using cart index-->
           </form>
           </td>
           
@@ -223,7 +221,7 @@ if (sizeof($_SESSION['cart']) !== 0) {
     
     <!-- adding this in to meet the requirements, though I would prefer just to show the cart empty message. delete this div to go back to the msg only laout-->
     <div class="checkout-fail">
-    <a href="carView.php"><button onclick=goBack()>Try to checkout</button></a>  
+    <a href="carView.php"><button onclick=goBack()>Checkout</button></a>  
     </div>
     
     <?php
